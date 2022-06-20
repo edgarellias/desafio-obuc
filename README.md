@@ -1,5 +1,7 @@
 ----------------------------------------------------- README ----------------------------------------------------- 
 
+Link do Deploy : https://teste-obuc.netlify.app/
+
 Este Projeto foi todo desenvolvido em ReactJS com StyledComponents, Routes, States.
 
 Dia 1 e 2: Criado o Header, SideBar.
