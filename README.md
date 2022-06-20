@@ -1,3 +1,5 @@
+------------------------------------- README -------------------------------------
+
 Este projeto pode ser inicializado com > terminal > npm i > npm start.
 
 Ele consiste em um desafio criado pela OBUC, no qual temos que criar uma tela que tenha metas, areas, origens, habilidades.
