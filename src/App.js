@@ -35,9 +35,10 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-	padding: 50px;
+	padding: 20px;
+	height: calc(100vh - 45px);
 	background-color: #dcdfe090;
 	@media screen and (max-width: 930px) {
-		padding: 20px;
+		padding: 50px;
 	}
 `;

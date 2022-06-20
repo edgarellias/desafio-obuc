@@ -25,7 +25,6 @@ export default function SideBar() {
 
 const Container = styled.div`
 	border-top: 1px solid white;
-	height: 95.2vh;
 	background: rgb(10, 64, 96);
 	background: linear-gradient(180deg, rgba(10, 64, 96, 1) 41%, rgba(18, 159, 209, 1) 74%);
 	@media screen and (max-width: 930px) {

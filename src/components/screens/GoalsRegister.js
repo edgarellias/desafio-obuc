@@ -54,7 +54,7 @@ export default function GoalsRegister() {
 const Container = styled.div`
 	padding: 30px;
 	width: 100%;
-	height: 100%;
+	height: 76.8vh;
 	box-shadow: 0px 1px 3px #00000029;
 	background-color: #ffffff90;
 	border: 1px solid #a9abac40;
@@ -75,7 +75,6 @@ const Container = styled.div`
 		margin-top: 3px;
 		gap: 3px;
 		list-style: none;
-		
 		overflow-y: auto;
 		width: 495px;
 		height: 100%;
