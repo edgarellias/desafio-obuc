@@ -105,15 +105,17 @@ const Container = styled.div`
 			color: #0a4060;
 			font-weight: 600;
 			word-break: break-all;
+			svg{
+				cursor: pointer;
+			}
 		}
 	
 	}
 	@media screen and (max-width: 930px){
 		padding: 20px;
-		/* margin-top: 40px; */
 		ul{
-			width: 81%;
-			height: 100vh;
+			width: calc(75% + 38px);
+			height: 79vh;
 			li{
 				width: 100%;
 			}
@@ -154,11 +156,12 @@ const Content = styled.form`
 	svg { // arrumar click remove responsivo
 		width: 30px;
 		height: 30px;
+		cursor: pointer;
 	}
 	@media screen and (max-width: 930px){
 		padding-left: 0px;
 		input{
-			width: 75%;
+			width: 76%;
 		}
 	}
 	

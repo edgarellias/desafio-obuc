@@ -17,6 +17,9 @@ const Container = styled.div`
 	background-color: #ffffff90;
 	border: 1px solid #a9abac40;
 	border-radius: 5px;
+	color: #0a4060;
+	display: flex;
+	flex-direction: column;
 	p {
         color: #0a4060;
 		font-weight: 600;

@@ -16,7 +16,7 @@ export const Header =  ( { setMenuIsVisible } ) => {
 
 const Top = styled.header`
 	background-color: rgba(10, 64, 96, 1);
-	height: 55px;
+	height: 45px;
 	padding: 0 40px 0 40px;
 	display: flex;
 	justify-content: space-between;
@@ -29,6 +29,9 @@ const LeftItens = styled.div``;
 const RightItens = styled.div`
 	display: none;
     padding-top: 2px;
+	svg{
+		cursor: pointer;
+	}
     @media screen and (max-width: 930px) {
         display: inline;
     }

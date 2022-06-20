@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { useEffect } from "react";
 
-
 export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
 	useEffect(() => {
 		document.body.style.overflowY = menuIsVisible ? "hidden" : "auto";
@@ -13,7 +12,7 @@ export function MenuMobile({ menuIsVisible, setMenuIsVisible }) {
 	return (
 		<Container isVisible={menuIsVisible}>
 			<IoClose size={45} onClick={() => setMenuIsVisible(false)} />
-			
+
 			<List>
 				{SidebarDB.map((item) => {
 					return (
@@ -35,13 +34,10 @@ const Container = styled.div`
 	left: 0;
 	right: 0;
 	bottom: 0;
-	z-index: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	z-index: 5;
 	background: rgb(10, 64, 96);
 	background: linear-gradient(180deg, rgba(10, 64, 96, 1) 41%, rgba(18, 159, 209, 1) 74%);
-	opacity: 0;
+	display: none;
 	pointer-events: none;
 	transform: translateY(50px);
 	transition: 0.5s;
@@ -51,11 +47,15 @@ const Container = styled.div`
 		right: 1rem;
 		transform: rotate(45deg);
 		transition: 0.7s;
+		cursor: pointer;
 	}
 	${({ isVisible }) =>
 		isVisible &&
 		css`
-			opacity: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
 			pointer-events: auto;
 			transform: translateY(0px);
 			> svg {
@@ -78,14 +78,14 @@ const List = styled.ul`
 `;
 
 const Text = styled.li`
-	
 	font-weight: 600;
-	font-size: 2.0rem;
+	font-size: 2rem;
 	margin-top: 5px;
 	list-style: none;
 	border-bottom: 1px solid white;
 	text-align: justify;
-	@media screen and (max-width: 400px){
+	
+	@media screen and (max-width: 400px) {
 		font-size: 1.6rem;
 	}
 `;
@@ -93,4 +93,5 @@ const Text = styled.li`
 const Navigation = styled(NavLink)`
 	text-decoration: none;
 	color: white;
+	cursor: pointer;
 `;

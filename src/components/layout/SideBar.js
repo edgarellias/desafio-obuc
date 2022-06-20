@@ -25,7 +25,7 @@ export default function SideBar() {
 
 const Container = styled.div`
 	border-top: 1px solid white;
-	height: 95vh;
+	height: 95.2vh;
 	background: rgb(10, 64, 96);
 	background: linear-gradient(180deg, rgba(10, 64, 96, 1) 41%, rgba(18, 159, 209, 1) 74%);
 	@media screen and (max-width: 930px) {
@@ -41,10 +41,6 @@ const List = styled.ul`
 `;
 
 const Text = styled.li`
-:active, :hover{
-	border-left: 3px solid white;
-	
-}
 	font-weight: 600;
 	font-size: 20px;
 	list-style: none;
